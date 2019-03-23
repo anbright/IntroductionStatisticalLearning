@@ -1,0 +1,25 @@
+---
+title: "Chapter3"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Forward Selection
+
+Start with a null model and begin adding the most significant variables until a stopping criteria
+
+## Backward Selection
+
+Start with all the features and begin removing the least significant ones
+
+## Selection
+
+Adding more features will always increase the testing R2
+
+## Categorical Features
+
+Create a dummy variable that is 1 if it is equal to the category and 0 otherwise. There is a baseline dummy variable that is included (1 - p number of dummy variables)
+- Use an F test since it does not depend ont he coding of the dummy variable
